@@ -8,6 +8,6 @@
 ## Arguments
 ```
 label: string | Displayed text
-name: string | Name
+name: string | Name. Must be the same of the same group
 value: string | Returned value
 ```
