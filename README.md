@@ -4,6 +4,7 @@
 
 ```sh
 waw add ngx-radio
+```
 
 ## Usage
 ```html
