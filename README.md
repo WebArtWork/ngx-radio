@@ -1,5 +1,10 @@
 # ngx-radio
 
+## Installation
+
+```sh
+waw add ngx-radio
+
 ## Usage
 ```html
 <wradio label="Male" name="sex" value="male" [(model)]="value.radio" (modelChange)="test()"></wradio>
