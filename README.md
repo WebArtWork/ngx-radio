@@ -10,6 +10,15 @@ waw add ngx-radio
 ```html
 <wradio label="Male" name="sex" value="male" [(model)]="value.radio" (modelChange)="test()"></wradio>
 ```
+```
+ts
+import { RadioModule } from 'src/app/modules/radio/radio.module';
+@NgModule({
+	imports: [
+		RadioModule,
+	]
+})
+```
 
 ## Arguments
 ```
