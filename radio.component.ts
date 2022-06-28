@@ -5,10 +5,15 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 	styleUrls: ['./radio.component.scss']
 })
 export class RadioComponent{
-	@Input() model = false;
 	@Input() name;
 	@Input() value;
 	@Input() label;
+	@Input() model = false;
 	@Output() modelChange = new EventEmitter()
 	constructor() {}
+
+	set() {
+		console.log(this.model);
+		this.modelChange.emit(this.model)
+	}
 }

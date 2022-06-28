@@ -1,5 +1,5 @@
 <label class="w-radio">
 	<input type="radio" [name]="name" [value]="value" class="w-radio__input" [(ngModel)]="model" (ngModelChange)="modelChange.emit(model)">
 	<span class="w-radio__label"></span>
-	<div class="w-radio__text">{{label}}</div>
+	<div (click)="set()" class="w-radio__text" *ngIf="label">{{label}}</div>
 </label>

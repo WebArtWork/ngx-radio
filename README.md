@@ -1,8 +1,22 @@
 # ngx-radio
 
+## Installation
+
+```sh
+waw add ngx-radio
+```
+
 ## Usage
 ```html
 <wradio label="Male" name="sex" value="male" [(model)]="value.radio" (modelChange)="test()"></wradio>
+```
+```
+import { RadioModule } from 'src/app/modules';
+@NgModule({
+	imports: [
+		RadioModule,
+	]
+})
 ```
 
 ## Arguments
