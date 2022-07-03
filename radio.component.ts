@@ -8,6 +8,7 @@ export class RadioComponent{
 	@Input() name;
 	@Input() value;
 	@Input() label;
+	@Input() disabled;
 	@Input() model = false;
 	@Output() modelChange = new EventEmitter()
 	constructor() {}
