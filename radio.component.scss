@@ -4,17 +4,19 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    line-height: 20px;
-    font-size: 16px;
-    margin: 5px 0;
+    padding: 10px 0;
     &:hover &__label:after {
         transform: scale(3.6);
+    }
+    &._disabled {
+        cursor: default;
+        .w-radio__label:after {
+            transform: scale(0);
+        }
     }
     &__label {
         position: relative;
         display: block;
-        float: left;
-        margin-right: 10px;
         width: 20px;
         height: 20px;
         border: 2px solid var(--c-border);
@@ -33,6 +35,16 @@
             transition: var(--transition);
             opacity: 0.08;
             pointer-events: none;
+        }
+    }
+    &__text {
+        margin-left: 10px;
+        font-size: calc(var(--fs) - 2px);
+        line-height: calc(var(--fs) - 2px);
+        letter-spacing: var(--letter-spacing);
+        color: var(--c-text);
+        &._disabled {
+            opacity: 0.4;
         }
     }
     &__input {
