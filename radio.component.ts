@@ -9,8 +9,8 @@ export class RadioComponent{
 	@Input() value;
 	@Input() label;
 	@Input() disabled;
-	@Input() model = false;
-	@Output() modelChange = new EventEmitter()
+	@Input() wngModel = false;
+	@Output() wngModelChange = new EventEmitter()
 	constructor() {}
 
 	set() {
