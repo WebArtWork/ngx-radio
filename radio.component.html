@@ -1,5 +1,5 @@
 <label class="w-radio" [class._disabled]="disabled">
-	<input type="radio" [name]="name" [disabled]="disabled" [value]="value" class="w-radio__input" [(ngModel)]="model" (ngModelChange)="modelChange.emit(model)">
+	<input type="radio" [name]="name" [disabled]="disabled" [value]="value" class="w-radio__input" [(ngModel)]="wngModel" (ngModelChange)="wngModelChange.emit(wngModel)">
 	<span class="w-radio__label"></span>
 	<div (click)="set()" class="w-radio__text" [class._disabled]="disabled" *ngIf="label">{{label}}</div>
 </label>
